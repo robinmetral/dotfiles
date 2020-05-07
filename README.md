@@ -1,18 +1,14 @@
 # Dotfiles
 
-1. Get curl
+1. Download
 
-```bash
-sudo apt install curl
-```
-
-2. Download
+Use wget, installed by default on Ubuntu. Alternatively, download with curl or git.
 
 ```
-curl -sL https://github.com/robinmetral/dotfiles/archive/master.tar.gz | tar xz
+wget https://github.com/robinmetral/dotfiles/archive/master.tar.gz -O - | tar xz
 ```
 
-3. Run
+2. Run
 
 ```
 cd dotfiles-master/scripts
