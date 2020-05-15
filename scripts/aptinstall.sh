@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function aptinstall {
-  which $1 &> /dev/null
+  which $1 &>/dev/null
 
   if [ $? -ne 0 ]; then
     echo "installing ${1}"

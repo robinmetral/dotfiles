@@ -8,7 +8,7 @@ sudo apt update && sudo apt full-upgrade -y
 ./snapinstall.sh
 
 # other programs
-# for f in programs/*.sh; do bash "$f" -H; done
+for f in programs/*.sh; do bash "$f" -H; done
 
 # get all upgrades
 sudo apt upgrade -y
