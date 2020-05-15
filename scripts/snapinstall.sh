@@ -15,6 +15,4 @@ snapinstall vlc
 snapinstall firefox
 snapinstall libreoffice
 snapinstall gimp
-
-# vscode is different because it needs a --classic flag
-# snapinstall code
+snapinstall mattermost-desktop
