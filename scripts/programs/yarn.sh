@@ -6,8 +6,10 @@ function installyarn {
     echo "📦 yarn already installed"
   else
     echo "📦 installing yarn"
-    # install according to https://classic.yarnpkg.com/en/docs/install/#alternatives-stable
-    wget -qO- https://yarnpkg.com/install.sh | bash
+    # install according to https://classic.yarnpkg.com/en/docs/install/#debian-stable
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt update && sudo apt install --no-install-recommends yarn # install yarn without node
   fi
 }
 installyarn
