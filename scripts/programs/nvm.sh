@@ -2,7 +2,7 @@
 
 # install nvm
 function installnvm {
-  if command -v code 2>/dev/null; then
+  if command -v nvm 2>/dev/null; then
     echo "📦 nvm already installed"
   else
     echo "📦 installing nvm"
