@@ -12,7 +12,9 @@ function installnvm {
 }
 installnvm
 
-source ~/.bashrc
+# alternative to `source ~/.bashrc` which doesn't work here
+# https://askubuntu.com/questions/64387/cannot-successfully-source-bashrc-from-a-shell-script
+exec bash
 
 # install node
 nvm install node # latest version

@@ -10,6 +10,7 @@ function installyarn {
     wget -qO- https://yarnpkg.com/install.sh | bash
   fi
 }
+installyarn
 
 # install global yarn packages
 function installmodule {
