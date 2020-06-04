@@ -2,7 +2,7 @@
 
 # install yarn
 function installyarn {
-  if command -v code 2>/dev/null; then
+  if command -v yarn 2>/dev/null; then
     echo "📦 yarn already installed"
   else
     echo "📦 installing yarn"
