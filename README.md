@@ -26,10 +26,17 @@ It installs some essential CLI tools (like `git` and `curl`) and the following p
 
 - vlc
 - firefox
+- thunderbird
 - libreoffice
 - gimp
 - mattermost-desktop
 - vscode (including [extensions](/scripts/programs/vscode.sh))
+
+It also sets up a [NodeJS environment with nvm](/scripts/programs/nvm.sh) and the latest NodeJS version, as well as [yarn and global yarn modules](/scripts/programs/yarn.sh):
+
+- gatsby-cli
+- jest-cli
+- typescript
 
 ## Thanks
 
