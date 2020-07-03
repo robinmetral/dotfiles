@@ -32,7 +32,7 @@ installextension jpoissonnier.vscode-styled-components
 # graphql formatter
 installextension prisma.vscode-graphql
 # go support
-installextension ms-vscode.go
+installextension golang.go
 # import cost
 installextension wix.vscode-import-cost
 # npm intellisense
