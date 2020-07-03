@@ -15,3 +15,5 @@ aptinstall curl
 aptinstall git
 # extra audio and video codecs, required to stream videos on some websites
 aptinstall libavcodec-extra
+# installing via apt over snap because snap is in beta and not official
+aptinstall git
