@@ -10,6 +10,11 @@ function installyarn {
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt update && sudo apt install --no-install-recommends yarn # install yarn without node
+
+    # add yarn dir to path to enable global commands
+    echo "$PATH:$(yarn global bin)" >> ~/.bashrc
+    # cannot source .bashrc here, export variable for the current shell
+    export PATH="$PATH:$(yarn global bin)"
   fi
 }
 installyarn
