@@ -16,3 +16,4 @@ snapinstall firefox
 snapinstall libreoffice
 snapinstall gimp
 snapinstall mattermost-desktop
+snapinstall chromium

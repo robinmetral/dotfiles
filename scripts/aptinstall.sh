@@ -13,6 +13,9 @@ function aptinstall {
 
 aptinstall curl
 aptinstall git
+# git setup
+git config --global user.email "robin@metral.ch"
+git config --global user.name "Robin Métral"
 # extra audio and video codecs, required to stream videos on some websites
 aptinstall libavcodec-extra
 # installing via apt over snap because snap is in beta and not official
