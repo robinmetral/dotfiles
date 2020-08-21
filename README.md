@@ -30,6 +30,7 @@ It installs some essential CLI tools (like `git` and `curl`) and the following p
 - libreoffice
 - gimp
 - mattermost-desktop
+- chromium
 - vscode (including [extensions](/scripts/programs/vscode.sh))
 
 It also sets up a [NodeJS environment with nvm](/scripts/programs/nvm.sh) and the latest NodeJS version, as well as [yarn and global yarn modules](/scripts/programs/yarn.sh):
@@ -40,4 +41,4 @@ It also sets up a [NodeJS environment with nvm](/scripts/programs/nvm.sh) and th
 
 ## Thanks
 
-This repo was insitially based on [Victoria Drake's dotfiles](https://github.com/victoriadrake/dotfiles).
+This repo was initially based on [Victoria Drake's dotfiles](https://github.com/victoriadrake/dotfiles).

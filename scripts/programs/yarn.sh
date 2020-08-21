@@ -10,11 +10,6 @@ function installyarn {
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt update && sudo apt install --no-install-recommends yarn # install yarn without node
-
-    # add yarn dir to path to enable global commands
-    echo "$PATH:$(yarn global bin)" >> ~/.bashrc
-    # cannot source .bashrc here, export variable for the current shell
-    export PATH="$PATH:$(yarn global bin)"
   fi
 }
 installyarn
@@ -31,3 +26,17 @@ gatsby telemetry --disable # disable telemetry
 installmodule jest-cli
 # typescript
 installmodule typescript
+
+# check that the path is correctly set up for global modules
+function updatepath {
+  if command -v gatsby 2>/dev/null; then
+    echo "📦 yarn global PATH already set up"
+  else
+    echo "📦 adding yarn global dir to PATH"
+    # add yarn global dir to path
+    echo "PATH=$PATH:$(yarn global bin)" >> ~/.bashrc
+    # cannot source .bashrc here, export variable for the current shell
+    export PATH="$PATH:$(yarn global bin)"
+  fi
+}
+updatepath
