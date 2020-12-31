@@ -17,3 +17,4 @@ snapinstall libreoffice
 snapinstall gimp
 snapinstall mattermost-desktop
 snapinstall chromium
+snapinstall ffmpeg
