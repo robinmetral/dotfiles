@@ -32,3 +32,5 @@ aptinstall libavcodec-extra
 aptinstall thunderbird
 # install nexcloud from nextcloud ppa
 aptinstall nextcloud-client
+# install java 11
+aptinstall openjdk-11-jdk
